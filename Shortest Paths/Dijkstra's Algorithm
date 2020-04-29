@@ -1,0 +1,18 @@
+Pseudocode:
+time (binary min heap): O(VlgV + ElgV)
+time (fibonacci heap): O(VlgV + E)
+
+relax(u, v, w):
+  if d[u] + w(u, v) < d[v]:
+    d[v] = d[u] + w(u, v)
+    pi[v] = u
+
+Dijkstra(Graph, W, start):
+  initialize(Graph, start)
+  Set = None
+  PriorityQueue = V[Graph]
+  while len(PriorityQueue) != 0:
+    u = extract-min(PriorityQueue)
+    Set = Set U u
+    for each vertex v in Adj[u]:
+      relax(u, v, w)
