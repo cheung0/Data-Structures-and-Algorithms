@@ -3,13 +3,13 @@ Watched MIT 6.006 (MIT's algorithms class) and implemented common data structure
 
 Will self study on the following topics:
 
-Week 1 (4/27 - 5/3): Shortest Paths Algorithms, Dynamic Programming, and Greedy Algorithms
+Week 1 (5/25 - 5/31): Arrays and Strings
 
-Week 2 (5/4 - 5/10): Arrays and Strings
+Week 2 (6/1 - 6/7): Linked Lists, Stacks and Queues
 
-Week 3 (5/11 - 5/17): Linked Lists, Stacks and Queues
+Week 3 
 
-Week 4 (5/18 - 5/24): Trees and Graphs
+Week 4 
 
 Week 5 
 
