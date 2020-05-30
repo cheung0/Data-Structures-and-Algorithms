@@ -4,8 +4,11 @@ Watched MIT 6.006 (MIT's algorithms class) and implemented common data structure
 Will self study on the following topics:
 
 Week 1 (5/25 - 5/31): Arrays and Strings
+
   -CTCI Chapter 1
+  
     -8/9 problems 
+    
   -MIT 6.006 8. Hashing with Chaining lecture
   
 
