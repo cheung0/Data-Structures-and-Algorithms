@@ -9,7 +9,7 @@ Week 1 (5/25 - 5/31): Arrays and Strings
   
       -8/9 problems 
     
-    MIT 6.006 
+    MIT 6.006 (Hash Tables) 
         -8. Hashing with Chaining lecture
   
 
