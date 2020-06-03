@@ -16,6 +16,11 @@ Week 1 (5/25 - 5/31): Arrays and Strings
 
 Week 2 (6/1 - 6/7): Linked Lists, Stacks and Queues
 
+    CTCI Chapter 2
+        -Implement Singly Linked List
+        - problems
+        
+
 Week 3 (6/8 - 6/14): 
 
 Week 4 
