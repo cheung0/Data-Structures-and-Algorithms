@@ -1,0 +1,21 @@
+
+*** lists to strings and strings to lists ***
+# string to list
+s = 'abc'
+list(s) -> ['a', 'b', 'c']
+
+# list to string
+s = 'a >b >c'
+s.split('>') -> ['a ', 'b ', 'c']
+
+# list of chars to string
+L = ['a', 'b', 'c']
+'_'.join(L) -> 'a_b_c'
+
+
+*** list operations ***
+sorted(L) -> returns sorted list, does not mutate L
+L.sort() -> mutates L into a sorted list
+L.reverse() -> mutates L into a reversed list
+
+***
