@@ -47,4 +47,4 @@ class Solution:
                 return False
             return self.isBalanced(root.left) and self.isBalanced(root.right)
         else:
-            return True
+            return True 
