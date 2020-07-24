@@ -31,3 +31,20 @@ class Solution:
             return 1 + max(left, right)
         
         return check(root) != -1
+    
+class Solution:    
+    def isBalanced(self, root: TreeNode) -> bool:
+        def height(root):
+            if root is None:
+                return 0
+            else:
+                return 1 + max(height(root.left), height(root.right))
+        
+        if root is not None:
+            left = height(root.left) 
+            right = height(root.right)
+            if abs(left - right) > 1:
+                return False
+            return self.isBalanced(root.left) and self.isBalanced(root.right)
+        else:
+            return True
