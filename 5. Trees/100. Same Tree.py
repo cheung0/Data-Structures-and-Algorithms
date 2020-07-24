@@ -1,3 +1,15 @@
+"""
+recursive dfs
+remarks: This structure is important for going down two binary trees at the same time. 
+time: O(N), N = # of nodes
+space: O(h), h = N for unbalanced tree, h = N log N for balanced tree
+
+iterative dfs with stack
+
+bfs with queue
+
+"""
+
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, val=0, left=None, right=None):
@@ -5,9 +17,6 @@
 #         self.left = left
 #         self.right = right
 
-# recursive dfs
-# time: O(N)
-# space: O(N), O(log(N)) for balanced tree
 class Solution(object):
     def isSameTree(self, p, q):
         """
