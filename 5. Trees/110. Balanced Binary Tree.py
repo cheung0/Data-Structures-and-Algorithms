@@ -32,6 +32,7 @@ class Solution:
         
         return check(root) != -1
     
+    
 class Solution:    
     def isBalanced(self, root: TreeNode) -> bool:
         def height(root):
