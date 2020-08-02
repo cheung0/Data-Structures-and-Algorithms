@@ -1,0 +1,44 @@
+"""
+bottom up dynamic programming
+remarks: The base cases are climbing 1 steps or climbing 2 steps. For the general cases, the number of ways to get to the nth step is the number of ways to get to 1 step below it or 2 steps below it. 
+time: O(N)
+space: O(N)
+"""
+class Solution(object):
+    def climbStairs(self, n):
+        """
+        :type n: int
+        :rtype: int
+        """
+        if n == 1:
+            return 1
+        if n == 2:
+            return 2
+        
+        dp = [0] * (n + 1)
+        dp[1] = 1
+        dp[2] = 2
+        
+        for i in range(3, n + 1):
+            dp[i] = dp[i - 1] + dp[i - 2]
+        
+        return dp[n]
+        
+"""
+recursion
+remarks: It's naive.
+time: O(2 ^ N)
+space: O(N)
+"""
+class Solution(object):
+    def climbStairs(self, n):
+        """
+        :type n: int
+        :rtype: int
+        """
+        if n == 1:
+            return 1
+        if n == 2:
+            return 2
+        
+        return self.climbStairs(n - 1) + self.climbStairs(n - 2)
