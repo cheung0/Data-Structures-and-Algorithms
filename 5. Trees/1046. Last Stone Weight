@@ -1,0 +1,43 @@
+"""
+priority queue 
+remarks: The heap provided in heapq is a min heap. We want a max heap, so we have to make all elements negative first.
+time: O(N log N)
+space: O(1)
+"""
+import heapq
+
+class Solution:
+    def lastStoneWeight(self, stones: List[int]) -> int:
+        stones = [-x for x in stones]
+        
+        heapq.heapify(stones)
+        
+        while len(stones) > 1:
+            heapq.heappush(stones, heapq.heappop(stones) - heapq.heappop(stones))
+        
+        return -stones[-1]
+            
+
+"""
+sorting
+remarks: I sort the list and then smash the stones.
+time: O(N^2 log N)
+space: O(1)
+"""
+class Solution:
+    def lastStoneWeight(self, stones: List[int]) -> int:
+        def smash(x, y):
+            if x == y:
+                stones.pop()
+                stones.pop()
+            if x != y:
+                stones.pop()
+                stones[-1] = y - x
+                
+        while True:
+            if len(stones) == 0:
+                return 0
+            if len(stones) == 1:
+                return stones[0]
+            stones.sort()
+            smash(stones[-2], stones[-1])
