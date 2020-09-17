@@ -4,14 +4,20 @@ Implemented data structures and algorithmic paradigms
 Practiced cracking the coding interview and leetcode questions
 Currently studying the following topics:
 
-1. Arrays and Strings
+Arrays and Strings
 
-2. Linked List
+Linked List
 
-3. Stacks and Queues
+Stacks  
 
-4. Trees 
+Queues
 
-5. Recursion and Dynamic Programming
+Trees 
 
-6. Searching and Sorting
+Recursion 
+
+Dynamic Programming
+
+Searching  
+
+Sorting
