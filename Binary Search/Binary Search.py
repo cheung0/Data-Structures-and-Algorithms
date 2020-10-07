@@ -1,7 +1,7 @@
-'''
+"""
 time: O(N)
 space: O(1)
-'''
+"""
 def binary_search_iterative(array, left, right, target):
     while left <= right:
         middle = left + (right - left) // 2
@@ -16,10 +16,10 @@ def binary_search_iterative(array, left, right, target):
     return -1
 
 
-'''
+"""
 time: O(N)
 space: O(log N) because of stack space
-'''
+"""
 def binary_search_recursive(array, left, right, target):
     if left <= right:
         middle = left + (right - left) // 2
