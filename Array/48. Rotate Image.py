@@ -1,5 +1,5 @@
 """
-time: O(N^2)
+time: O(N^2) 
 space: O(1)
 remarks: Transpose the matrix by swapping rows and cols. Swap horizontally. 
 """
