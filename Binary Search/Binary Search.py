@@ -1,5 +1,5 @@
 """
-time: O(N)
+time: O(log n)
 space: O(1)
 """
 def binary_search_iterative(array, left, right, target):
@@ -17,8 +17,8 @@ def binary_search_iterative(array, left, right, target):
 
 
 """
-time: O(N)
-space: O(log N) because of stack space
+time: O(log n)
+space: O(log n) because of stack space
 """
 def binary_search_recursive(array, left, right, target):
     if left <= right:
